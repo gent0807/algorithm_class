@@ -18,5 +18,25 @@
     <ClCompile Include="test.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="예제1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="예제2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="예제3.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="예제4.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="예제6.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="예제5.c">
+      <Filter>소스 파일</Filter>
+    </None>
   </ItemGroup>
 </Project>

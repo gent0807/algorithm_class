@@ -140,6 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="test.c" />
+    <ClCompile Include="예제1.c" />
+    <ClCompile Include="예제2.c" />
+    <ClCompile Include="예제3.c" />
+    <ClCompile Include="예제4.c" />
+    <ClCompile Include="예제6.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="예제5.c" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
