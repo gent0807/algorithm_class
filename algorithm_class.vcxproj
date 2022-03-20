@@ -24,6 +24,7 @@
     <ClCompile Include="예제2.c" />
     <ClCompile Include="예제3.c" />
     <ClCompile Include="예제4.c" />
+    <ClCompile Include="예제5.c" />
     <ClCompile Include="예제6.c" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
