@@ -14,5 +14,5 @@ void main() {
 
 	avg = sum / 10;
 
-	printf("40명 학생의 평균은 %f", avg);
+	printf("10명 학생의 평균은 %f", avg);
 }

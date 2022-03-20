@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define NUM 100
 
-int main() {
+void main() {
 	int i, scores[NUM][2], sid, jumsu=0, rank, n;
 	printf("학생 수를 입력하세요 :");
 	scanf_s("%d", &n);
