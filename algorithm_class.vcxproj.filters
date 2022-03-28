@@ -36,5 +36,32 @@
     <ClCompile Include="예제5.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="3주차 prog1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3주차 prog2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3주차 prog3.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="3주차 prog4.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="의사코드 실습예제 1.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="의사코드 실습예제 2.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="의사코드 실습예제 3.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="의사코드 실습예제 4.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="의사코드 실습예제 5.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
