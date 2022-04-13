@@ -32,7 +32,7 @@ void main() {
 				printf("    ");
 			else printf("%4d", arr[i][j]);
 		}
+
 		printf("\n");
 	}
-	
 }
