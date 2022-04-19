@@ -14,7 +14,7 @@ void main() {
 	}
 	printf("데이터 수: %d", size);
 
-	if (size = 0)
+	if (size == 0)
 		printf("No data!!!");
 
 	else printf("최대 값: %d", max);
