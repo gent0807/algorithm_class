@@ -28,7 +28,7 @@ void main() {
 	scanf_s("%d", &founding);
 
 	
-	location = bsearch(arr, 10, founding);
+	location = bsearch(arr,10, founding);
 
 	if (location >= 0)
 		printf("%d의 배열에서의 위치는 %d입니다.", founding, location);

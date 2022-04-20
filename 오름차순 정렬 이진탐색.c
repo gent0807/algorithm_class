@@ -8,19 +8,21 @@ void main() {
 	int founding;
 	int location;
 	int cond;
+	int n;
 
 	for (int i = 0; i < 10; i++) {
 		printf("배열 메모리의 %d번째 공간에 들어갈 정수 데이터를 입력하세요\n", i);
 		scanf_s("%d", &arr[i]);
 	}
+	n = sizeof(arr) / sizeof(int);
 
 	printf("데이터를 오름차순 정렬하여 입력하였는가?(0/1)\n");
 	scanf_s("%d", &cond);
 
 	if (cond==0)
-		selection_sort(arr, 10);
+		selection_sort(arr, n);
 
-	for (int i = 0; i < 10; i++) {
+	for (int i = 0; i < n; i++) {
 		printf("%d ", arr[i]);
 	}
 
@@ -29,7 +31,7 @@ void main() {
 	scanf_s("%d", &founding);
 
 
-	location = bsearch(arr, 10, founding);
+	location = bsearch(arr, n, founding);
 
 	if (location >= 0)
 		printf("%d의 배열에서의 위치는 %d입니다.", founding, location);
@@ -57,12 +59,20 @@ int bsearch(int a[], int n, int key) {
 	while (left<=right)
 	{
 		mid = (left + right) / 2;
-		if (key > a[mid])
 			left = mid + 1;
-		else if (key < a[mid])
-			right = mid - 1;
-		else
-			return mid;
+
+
+			if (key > a[mid])
+				left = mid + 1;
+
+		
+			else if (key < a[mid])
+			
+				right = mid - 1;
+		
+			else
+			
+				return mid;
 
 	}
 	return -1;
