@@ -81,7 +81,7 @@ int get_int(int current_operand, char ch) {
 	return current_operand;
 }
 
-int is_operator(ch) {
+int is_operator(char ch) {
 	if (ch == '+')
 		return 1;
 	else if (ch == '-')
@@ -90,7 +90,8 @@ int is_operator(ch) {
 		return 1;
 	else if (ch == '/')
 		return 1;
-	else 0;
+	else 
+		return 0;
 }
 int int_operation(char op, int op1, int op2) {
 	if (op == '+') {
