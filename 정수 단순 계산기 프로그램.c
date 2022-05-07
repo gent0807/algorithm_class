@@ -21,7 +21,7 @@ void int_calculator() {
 	
 	int operand1 = 0, operand2 = 0;
 	char op;
-	char c = '0';
+	char c='0';
 	int result;
 	int current_stage = STAGE1;
 

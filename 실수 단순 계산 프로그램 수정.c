@@ -43,8 +43,8 @@ void real_calculator() {
 				op = c;
 				operand2 = 0;
 				if (status == 0) {
-					is_intNumber1 = true;
 				}
+					is_intNumber1 = true;
 				status = 0;
 				current_stage = STAGE2;
 			}
