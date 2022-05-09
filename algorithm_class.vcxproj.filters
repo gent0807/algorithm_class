@@ -120,7 +120,13 @@
     <ClCompile Include="정수 단순 계산기 프로그램.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="실수 단순 계산 프로그램.c">
+    <ClCompile Include="magicSqure.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="struct_ex.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="실수 단순 계산 프로그램 수정.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
