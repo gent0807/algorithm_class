@@ -129,5 +129,17 @@
     <ClCompile Include="실수 단순 계산 프로그램 수정.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="후위표기식 계산.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="포인터값확인.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="swap.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="addProduct.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
