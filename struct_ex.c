@@ -14,7 +14,7 @@ example onep, exmember[20];
 void main() {
 	int i, n;
 	printf("Input the number of data: ");
-	scanf_s("%d", &n);
+	scanf("%d", &n);
 
 	for (i = 0; i < n; i++) {
 		printf("데이터 입력:");
