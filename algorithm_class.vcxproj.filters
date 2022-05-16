@@ -147,5 +147,8 @@
     <ClCompile Include="동적 메모리 할당.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="순차리스트.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
