@@ -150,5 +150,8 @@
     <ClCompile Include="순차리스트.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="이진검색트리.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
