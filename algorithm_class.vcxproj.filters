@@ -141,5 +141,11 @@
     <ClCompile Include="addProduct.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="포인터와 배열 주소 확인.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="동적 메모리 할당.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
