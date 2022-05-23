@@ -106,9 +106,10 @@ void inorder(ENODE* ptr) {
 }
 void year_search(ENODE* root, int year) {
 	ENODE* tptr = root;
-	while (tptr) {
+	if (tptr) {
+		year_search(tptr->left, year);
 		if (tptr->syear == year)
-			printf("%d %c", tptr->eid, tptr->grade);
-		tptr = tptr->left;
+			printf("%d %c\n", tptr->eid, tptr->grade);
+		year_search(tptr->right, year);
 	}
 }

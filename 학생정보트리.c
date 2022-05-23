@@ -62,7 +62,7 @@ SNODETYPE* search(SNODETYPE* root, long keyid) {
 	}
 	return NULL;
 }
-int insert_node(SNODETYPE* root, long keyid) {
+int insert_node(SNODETYPE* root, long keyid,float grade) {
 	SNODETYPE* tptr = root, * before = NULL;
 	int left;
 	while (tptr) {
@@ -83,6 +83,7 @@ int insert_node(SNODETYPE* root, long keyid) {
 
 	tptr = (SNODETYPE*)malloc(sizeof(SNODETYPE));
 	tptr->id = keyid;
+	tptr->grade = grade;
 	tptr->left = tptr->right = NULL;
 	if (left) before->left = tptr;
 	else before->right = tptr;
