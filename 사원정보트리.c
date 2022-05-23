@@ -5,7 +5,6 @@ typedef struct node {
 	int eid;
 	int syear;
 	char grade;
-	float grade;
 	struct node* right;
 }ENODE;
 
@@ -42,16 +41,17 @@ void main(int argc, char* argv[]) {
 
 	inorder(tree);
 
-	printf("Enter employee id number to search: ");
-	ptr = search(tree, id);
+	printf("Enter 입사년도 to search: ");
+	scanf("%d", &year);
+	year_search(tree, year);
+
+	printf("Enter 사원번호 to search: ");
 	scanf("%d", &id);
+	ptr = search(tree, id);
 	if (ptr)
 		printf("%d는 %d에 입사했고 인사등급은 %c입니다.\n", ptr->eid, ptr->syear, ptr->grade);
 	else
 		printf("%d is not exist.\n", ptr->eid);
-	printf("Enter 입사년도 to search: ");
-	scanf("%d", &year);
-	year_search(tree, year);
 }
 ENODE* search(ENODE* root, int key) {
 	ENODE* tptr = root;
@@ -106,8 +106,8 @@ void inorder(ENODE* ptr) {
 }
 void year_search(ENODE* root, int year) {
 	ENODE* tptr = root;
-	while (tptr) {
 		year_search(tptr->left, year);
+	while (tptr) {
 		if (tptr->syear == year)
 			printf("%d %c\n", tptr->eid, tptr->grade);
 		year_search(tptr->right, year);
