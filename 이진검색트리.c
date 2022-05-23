@@ -4,7 +4,7 @@ typedef struct node {
 	char* word;
 	struct node* right;
 }NODETYPE;
-int inser_node(NODETYPE* root, char* str);
+int insert_node(NODETYPE* root, char* str);
 NODETYPE* search(NODETYPE* root, char* key);
 void inorder(NODETYPE* root);
 void main() {
