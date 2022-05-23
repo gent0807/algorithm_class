@@ -94,7 +94,7 @@ void inorder(SNODETYPE* ptr) {
 
 	if (ptr) {
 		inorder(ptr->left);
-		printf("%s\n", ptr->id);
+		printf("%d\n", ptr->id);
 		inorder(ptr->right);
 	}
 }
