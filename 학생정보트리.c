@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 typedef struct node {
 	struct node* left;
 	long id;
@@ -55,7 +56,7 @@ SNODETYPE* search(SNODETYPE* root, long keyid) {
 		
 		if (keyid < tptr->id)
 			tptr = tptr->left;
-		else if (keyid < tptr->id)
+		else if (keyid > tptr->id)
 			tptr = tptr->right;
 		else
 			return tptr;

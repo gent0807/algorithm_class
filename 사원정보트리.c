@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 typedef struct node {
 	struct node* left;
 	int eid;
@@ -51,7 +51,7 @@ void main(int argc, char* argv[]) {
 	if (ptr)
 		printf("%d는 %d에 입사했고 인사등급은 %c입니다.\n", ptr->eid, ptr->syear, ptr->grade);
 	else
-		printf("%d is not exist.\n", ptr->eid);
+		printf("%d is not exist.\n", id);
 }
 ENODE* search(ENODE* root, int key) {
 	ENODE* tptr = root;
@@ -60,7 +60,7 @@ ENODE* search(ENODE* root, int key) {
 
 		if (key < tptr->eid)
 			tptr = tptr->left;
-		else if (key < tptr->eid)
+		else if (key > tptr->eid)
 			tptr = tptr->right;
 		else
 			return tptr;
@@ -92,12 +92,12 @@ int insert_node(ENODE* root, int num, int year, char score) {
 	tptr->grade = score;
 	tptr->left = tptr->right = NULL;
 	if (left) before->left = tptr;
-	else before->right = tptr; 
+	else before->right = tptr;
 	return 1;
+
 
 }
 void inorder(ENODE* ptr) {
-
 	if (ptr) {
 		inorder(ptr->left);
 		printf("%d\t%d\t%c\n", ptr->eid, ptr->syear, ptr->grade);
@@ -105,10 +105,10 @@ void inorder(ENODE* ptr) {
 	}
 }
 void year_search(ENODE* root, int year) {
-	ENODE* tptr = root;
+	ENODE* tptr = root;		
+	if (tptr) {
 		year_search(tptr->left, year);
-	while (tptr) {
-		if (tptr->syear == year)
+		if ((tptr->syear) == year)
 			printf("%d %c\n", tptr->eid, tptr->grade);
 		year_search(tptr->right, year);
 	}
