@@ -1,16 +1,13 @@
 #include <stdio.h>
-
 typedef struct node {
 	struct node* left;
 	char* word;
 	int count;
 	struct node* right;
 }NODETYPE;
-
-int build_node(NODETYPE* root, char* str);
+int insert_node(NODETYPE* root, char* str);
 NODETYPE* search(NODETYPE* root, char* key);
-void travel(NODETYPE* root);
-
+void inorder(NODETYPE* root);
 void main() {
 	NODETYPE* tree = NULL;
 	NODETYPE* ptr;
@@ -21,12 +18,12 @@ void main() {
 		if (!tree) {
 			tree = (NODETYPE*)malloc(sizeof(NODETYPE));
 			tree->word = (char*)malloc(strlen(wbuf) + 1);
-			tree->count = 1;
 			strcpy(tree->word, wbuf);
+			tree->count = 1;
 			tree->left = tree->right = NULL;
 		}
 		else
-			build_node(tree, wbuf);
+			insert_node(tree, wbuf);
 	}
 	printf("\n\nEnter a key to search: ");
 	gets(wbuf);
@@ -36,13 +33,13 @@ void main() {
 	else
 		printf("%s is not exist.\n\n", wbuf);
 	printf("트리안의 단어들 (사전식 순서)\n");
-	travel(tree);
+	inorder(tree);
 }
-NODETYPE* search(NODETYPE* root, char* word) {
+NODETYPE* search(NODETYPE* root, char* key) {
 	NODETYPE* tptr = root;
-	int cmp;
+	int cmp = 0;
 	while (tptr) {
-		cmp = strcmp(word, tptr->word);
+		cmp = strcmp(key, tptr->word);
 		if (cmp < 0)
 			tptr = tptr->left;
 		else if (cmp > 0)
@@ -52,9 +49,9 @@ NODETYPE* search(NODETYPE* root, char* word) {
 	}
 	return NULL;
 }
-int build_node(NODETYPE* root, char* word) {
+int insert_node(NODETYPE* root, char* word) {
 	NODETYPE* tptr = root, * before = NULL;
-	int cmp;
+	int cmp = 0;
 	while (tptr) {
 		cmp = strcmp(word, tptr->word);
 		if (cmp < 0) {
@@ -65,9 +62,10 @@ int build_node(NODETYPE* root, char* word) {
 			before = tptr;
 			tptr = tptr->right;
 		}
-		else
-			(tptr->count)++;
-		return 0;
+		else {
+			tptr->count++;
+			return 0;
+		}
 	}
 
 	tptr = (NODETYPE*)malloc(sizeof(NODETYPE));
@@ -80,11 +78,11 @@ int build_node(NODETYPE* root, char* word) {
 	return 1;
 
 }
-void travel(NODETYPE* ptr) {
+void inorder(NODETYPE* ptr) {
 
 	if (ptr) {
-		travel(ptr->left);
+		inorder(ptr->left);
 		printf("%s\t%d\n", ptr->word, ptr->count);
-		travel(ptr->right);
+		inorder(ptr->right);
 	}
 }

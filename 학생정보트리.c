@@ -1,9 +1,9 @@
 #include <stdio.h>
 typedef struct node {
 	struct node* left;
-	struct node* right;
 	long id;
 	float grade;
+	struct node* right;
 }SNODETYPE;
 
 int insert_node(SNODETYPE* root, long sid, float grade);
@@ -27,8 +27,8 @@ void main(int argc, char* argv[]) {
 		if (!tree) {
 			tree = (SNODETYPE*)malloc(sizeof(SNODETYPE));
 			tree->id = sid;
-			tree->left = tree->right = NULL;
 			tree->grade = grade;
+			tree->left = tree->right = NULL;
 		}
 		else
 			insert_node(tree, sid, grade);
@@ -62,7 +62,7 @@ SNODETYPE* search(SNODETYPE* root, long keyid) {
 	}
 	return NULL;
 }
-int insert_node(SNODETYPE* root, long keyid,float grade) {
+int insert_node(SNODETYPE* root, long keyid, float grade) {
 	SNODETYPE* tptr = root, * before = NULL;
 	int left;
 	while (tptr) {

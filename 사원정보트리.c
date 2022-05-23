@@ -43,8 +43,8 @@ void main(int argc, char* argv[]) {
 	inorder(tree);
 
 	printf("Enter employee id number to search: ");
-	scanf("%d", &id);
 	ptr = search(tree, id);
+	scanf("%d", &id);
 	if (ptr)
 		printf("%d는 %d에 입사했고 인사등급은 %c입니다.\n", ptr->eid, ptr->syear, ptr->grade);
 	else
@@ -92,7 +92,7 @@ int insert_node(ENODE* root, int num, int year, char score) {
 	tptr->grade = score;
 	tptr->left = tptr->right = NULL;
 	if (left) before->left = tptr;
-	else before->right = tptr;
+	else before->right = tptr; 
 	return 1;
 
 }
@@ -106,7 +106,7 @@ void inorder(ENODE* ptr) {
 }
 void year_search(ENODE* root, int year) {
 	ENODE* tptr = root;
-	if (tptr) {
+	while (tptr) {
 		year_search(tptr->left, year);
 		if (tptr->syear == year)
 			printf("%d %c\n", tptr->eid, tptr->grade);

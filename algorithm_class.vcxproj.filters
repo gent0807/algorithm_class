@@ -153,13 +153,13 @@
     <ClCompile Include="이진검색트리.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="이진검색트리1.c">
-      <Filter>소스 파일</Filter>
-    </ClCompile>
     <ClCompile Include="학생정보트리.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="사원정보트리.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="단어츌현빈도수출력이진트리.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
