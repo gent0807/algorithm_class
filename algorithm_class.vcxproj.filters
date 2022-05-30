@@ -162,5 +162,8 @@
     <ClCompile Include="단어츌현빈도수출력이진트리.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="bubble.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
