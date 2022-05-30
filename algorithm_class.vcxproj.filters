@@ -165,5 +165,17 @@
     <ClCompile Include="bubble.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="삽입정렬.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="programming_tip.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="버블연습.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="선택정렬.c">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

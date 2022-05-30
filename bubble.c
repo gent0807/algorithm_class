@@ -7,8 +7,8 @@ void bubble(unsigned a[][2], int n);
 
 void main(int argc, char* argv[]) {
 	FILE* stockdb;
-	unsigned stock[INUM][2], item_code;
 	int k = 0, s;
+	unsigned stock[INUM][2], item_code;
 
 	if ((stockdb = fopen(argv[1], "r")) == NULL) {
 		printf("입력파일을 열 수 없습니다.\n");
