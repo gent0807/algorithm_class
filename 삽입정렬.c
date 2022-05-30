@@ -24,12 +24,12 @@ void main(int argc, char* argv[]) {
 		exit(1);
 	}
 
-	if ((out = fopen(argv[1], "w")) == NULL) {
+	if ((out = fopen(argv[2], "w")) == NULL) {
 		printf("결과파일을 열 수 없습니다.\n");
 		exit(1);
 	}
 
-	while (fscanf(infile, "%ld %s %lf", &s[i].id, s[i].name, s[i].score) != EOF) {
+	while (fscanf(infile, "%ld %s %lf", &(s[i].id), s[i].name, &(s[i].score)) != EOF) {
 		i++;
 	}
 	printf("학번 순으로 저장하려면 1을 \n");
@@ -43,7 +43,8 @@ void main(int argc, char* argv[]) {
 	}
 
 	for (j = 0; j < i; j++) {
-		fprintf(out, "%ld\t%s\t%.2f", s[j].id, s[j].name, s[j].score);
+		fprintf(out, "%ld\t%s\t%.2f\n", s[j].id, s[j].name, s[j].score);
+		printf("%ld\t%s\t%.2f\n", s[j].id, s[j].name, s[j].score);
 	}
 	printf("Program terminated....\n");
 
