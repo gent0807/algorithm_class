@@ -1,7 +1,7 @@
 #include <stdio.h>
 void selection_sort(double a[], int n);
 void main() {
-	double score[] = { 90.5, 89.7, 92.5, 85.6,97.5,76.9,88.2,70.3,93.2,95.2 };
+	double score[] = { 90.5, 89.7, 92.5, 85.6,97.5,76.9,88.2,70.3,93.2,94.3 };
 	int i, n = sizeof(score) / sizeof(double);
 
 	for (int i = 0; i < n; i++)
