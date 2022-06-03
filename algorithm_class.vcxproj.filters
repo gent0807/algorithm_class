@@ -102,7 +102,7 @@
     <ClCompile Include="최대공약수.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="파일처리해서 명령인수.c">
+    <ClCompile Include="파일처리해서 명령인수%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="하노이탑.c">
@@ -111,70 +111,70 @@
     <ClCompile Include="하노이탑2.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="오름차순 정렬 이진탐색.c">
+    <ClCompile Include="오름차순 정렬 이진탐색%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="내림차순 정렬 이진탐색.c">
+    <ClCompile Include="내림차순 정렬 이진탐색%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="정수 단순 계산기 프로그램.c">
+    <ClCompile Include="정수 단순 계산기 프로그램%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="magicSqure.c">
+    <ClCompile Include="magicSqure%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="struct_ex.c">
+    <ClCompile Include="struct_ex%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="실수 단순 계산 프로그램 수정.c">
+    <ClCompile Include="실수 단순 계산 프로그램 수정%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="후위표기식 계산.c">
+    <ClCompile Include="후위표기식 계산%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="포인터값확인.c">
+    <ClCompile Include="포인터값확인%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="swap.c">
+    <ClCompile Include="swap%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="addProduct.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="포인터와 배열 주소 확인.c">
+    <ClCompile Include="포인터와 배열 주소 확인%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="동적 메모리 할당.c">
+    <ClCompile Include="동적 메모리 할당%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="순차리스트.c">
+    <ClCompile Include="순차리스트%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="이진검색트리.c">
+    <ClCompile Include="이진검색트리%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="학생정보트리.c">
+    <ClCompile Include="학생정보트리%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="사원정보트리.c">
+    <ClCompile Include="사원정보트리%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="단어츌현빈도수출력이진트리.c">
+    <ClCompile Include="단어츌현빈도수출력이진트리%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="bubble.c">
+    <ClCompile Include="bubble%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="삽입정렬.c">
+    <ClCompile Include="삽입정렬%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="programming_tip.c">
+    <ClCompile Include="programming_tip%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="버블연습.c">
+    <ClCompile Include="버블연습%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="선택정렬.c">
+    <ClCompile Include="선택정렬%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
