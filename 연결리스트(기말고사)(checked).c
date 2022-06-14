@@ -51,7 +51,7 @@ void print_list(simple_pointer ptr) {
 	simple_pointer before;
 	while (ptr != NULL) {
 		before = ptr;
-		printf("%s %d", before->state, before->count);
+		printf("%s %d", before->state, before->count); //출력을 먼저해주고 이동
 		ptr = before->list_pointer;
 	}
 }

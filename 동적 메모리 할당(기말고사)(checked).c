@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <stdlib.h>
 main() {
 	int* ip;
 	float* fp;

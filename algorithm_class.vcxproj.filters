@@ -144,10 +144,10 @@
     <ClCompile Include="포인터와 배열 주소 확인%28기말고사%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="동적 메모리 할당%28기말고사%29.c">
+    <ClCompile Include="동적 메모리 할당%28기말고사%29%28checked%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="연결리스트%28기말고사%29.c">
+    <ClCompile Include="연결리스트%28기말고사%29%28checked%29.c">
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="이진검색트리%28기말고사%29.c">
