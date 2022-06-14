@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 typedef struct simple_list* simple_pointer;
 struct simple_list {
 	char state[3];					  
